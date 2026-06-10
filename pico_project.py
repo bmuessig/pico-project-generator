@@ -622,7 +622,7 @@ class ProjectWindow(tk.Frame):
 
     def boardtype_change_callback(self, event):
         boardtype = self.boardtype.get()
-        if boardtype == "pico_w":
+        if boardtype == "pico_w" or boardtype == "pico2_w":
             self.setState(self.picowSubframe, "enabled")
         else:
             self.setState(self.picowSubframe, "disabled")
